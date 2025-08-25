@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board - Seva Ashram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🏠 Seva Ashram</h2>
+                    <p>सेवा आश्रम</p>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="journey.html" class="nav-link">Our Journey</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="notice.html" class="nav-link active">Notice Board</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Notice Board</h1>
+            <p>सूचना बोर्ड - Stay Updated with Latest News & Events</p>
+        </div>
+    </section>
+
+    <!-- Notice Filters -->
+    <section style="padding: 2rem 0; background-color: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterNotices('all')">All Updates</button>
+                    <button class="filter-btn" onclick="filterNotices('events')">Events</button>
+                    <button class="filter-btn" onclick="filterNotices('health')">Health</button>
+                    <button class="filter-btn" onclick="filterNotices('general')">General</button>
+                    <button class="filter-btn" onclick="filterNotices('festivals')">Festivals</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Board Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Important Announcements -->
+            <div style="margin-bottom: 3rem;">
+                <h2 class="section-title">📢 Important Announcements</h2>
+                <div class="notice-item important events" style="background: linear-gradient(135deg, var(--gold), var(--brown)); color: var(--cream); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 300px;">
+                            <h3 style="color: var(--cream); font-size: 1.5rem; margin-bottom: 1rem;">🎊 Grand Diwali Celebration - November 12th</h3>
+                            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Join us for our annual Diwali celebration with traditional decorations, cultural programs, and special festive meals. 
+                                Families are warmly invited to participate in the festivities.
+                            </p>
+                            <p><strong>Time:</strong> 6:00 PM onwards | <strong>Venue:</strong> Main Hall</p>
+                        </div>
+                        <div style="color: var(--cream); font-size: 0.9rem; opacity: 0.9;">
+                            Posted: October 25, 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Updates -->
+            <div style="margin-bottom: 3rem;">
+                <h2 class="section-title">📝 Recent Updates</h2>
+                <div class="notices-grid">
+                    <!-- Event Notice -->
+                    <div class="notice-item events">
+                        <div class="notice-header">
+                            <h3>🎭 Cultural Program - This Weekend</h3>
+                            <span class="notice-date">November 2, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>Special cultural program featuring classical music and dance performances by local artists. All residents and families are welcome to attend.</p>
+                            <div class="notice-details">
+                                <span class="notice-tag events-tag">Event</span>
+                                <span class="notice-time">⏰ Saturday 7:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Health Notice -->
+                    <div class="notice-item health">
+                        <div class="notice-header">
+                            <h3>🩺 Monthly Health Checkup</h3>
+                            <span class="notice-date">October 30, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>Dr. Sharma will conduct monthly health checkups for all residents this weekend. Please ensure you have your medical history ready.</p>
+                            <div class="notice-details">
+                                <span class="notice-tag health-tag">Health</span>
+                                <span class="notice-time">⏰ Sunday 10:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- General Notice -->
+                    <div class="notice-item general">
+                        <div class="notice-header">
+                            <h3>🍽️ New Menu Introduction</h3>
+                            <span class="notice-date">October 28, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>We're introducing new healthy and delicious menu options based on resident feedback. Special dietary requirements continue to be accommodated.</p>
+                            <div class="notice-details">
+                                <span class="notice-tag general-tag">General</span>
+                                <span class="notice-time">🍽️ Starting November 1st</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Festival Notice -->
+                    <div class="notice-item festivals">
+                        <div class="notice-header">
+                            <h3>🕯️ Karwa Chauth Celebration</h3>
+                            <span class="notice-date">October 20, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>Special Karwa Chauth celebration was organized with traditional rituals and festive meals. Thank you to all who participated!</p>
+                            <div class="notice-details">
+                                <span class="notice-tag festivals-tag">Festival</span>
+                                <span class="notice-time">✅ Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Health Notice -->
+                    <div class="notice-item health">
+                        <div class="notice-header">
+                            <h3>🧘‍♀️ New Yoga Session Timings</h3>
+                            <span class="notice-date">October 18, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>Morning yoga sessions are now available at two different times to accommodate all residents' preferences and mobility levels.</p>
+                            <div class="notice-details">
+                                <span class="notice-tag health-tag">Health</span>
+                                <span class="notice-time">⏰ 7:00 AM & 8:30 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Notice -->
+                    <div class="notice-item events">
+                        <div class="notice-header">
+                            <h3>📚 Story Telling Session</h3>
+                            <span class="notice-date">October 15, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>Weekly storytelling sessions where residents share their life experiences and stories. A wonderful way to connect and learn from each other.</p>
+                            <div class="notice-details">
+                                <span class="notice-tag events-tag">Event</span>
+                                <span class="notice-time">⏰ Every Wednesday 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- General Notice -->
+                    <div class="notice-item general">
+                        <div class="notice-header">
+                            <h3>📱 Video Call Facility Upgrade</h3>
+                            <span class="notice-date">October 12, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>We've upgraded our video calling facilities to help residents stay better connected with their families. Now available in all common areas.</p>
+                            <div class="notice-details">
+                                <span class="notice-tag general-tag">General</span>
+                                <span class="notice-time">📱 Available 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Festival Notice -->
+                    <div class="notice-item festivals">
+                        <div class="notice-header">
+                            <h3>🎊 Navratri Celebrations Recap</h3>
+                            <span class="notice-date">October 10, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>Our 9-day Navratri celebration was a grand success with daily aartis, traditional dancing, and special prasad. Thank you to all participants!</p>
+                            <div class="notice-details">
+                                <span class="notice-tag festivals-tag">Festival</span>
+                                <span class="notice-time">✅ Completed Successfully</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Health Notice -->
+                    <div class="notice-item health">
+                        <div class="notice-header">
+                            <h3>🌡️ Seasonal Health Precautions</h3>
+                            <span class="notice-date">October 8, 2024</span>
+                        </div>
+                        <div class="notice-content">
+                            <p>As winter approaches, please follow the seasonal health guidelines provided by our medical team to stay healthy and comfortable.</p>
+                            <div class="notice-details">
+                                <span class="notice-tag health-tag">Health</span>
+                                <span class="notice-time">❄️ Winter Guidelines</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div style="background: linear-gradient(135deg, var(--primary-green), var(--dark-green)); padding: 3rem 2rem; border-radius: 20px; color: var(--cream); margin-bottom: 3rem;">
+                <h2 style="text-align: center; color: var(--cream); margin-bottom: 3rem;">📅 Upcoming Events This Month</h2>
+                <div class="content-grid">
+                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: var(--gold); margin-bottom: 1rem;">🎵 Music Therapy Session</h3>
+                        <p><strong>Date:</strong> November 5, 2024<br>
+                        <strong>Time:</strong> 3:00 PM - 4:30 PM<br>
+                        <strong>Venue:</strong> Activity Room</p>
+                        <p style="margin-top: 1rem;">Professional music therapist will conduct healing music sessions.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: var(--gold); margin-bottom: 1rem;">🏥 Blood Donation Camp</h3>
+                        <p><strong>Date:</strong> November 8, 2024<br>
+                        <strong>Time:</strong> 10:00 AM - 2:00 PM<br>
+                        <strong>Venue:</strong> Main Hall</p>
+                        <p style="margin-top: 1rem;">Annual blood donation camp in partnership with Red Cross Society.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: var(--gold); margin-bottom: 1rem;">🍰 Birthday Celebrations</h3>
+                        <p><strong>Date:</strong> November 15, 2024<br>
+                        <strong>Time:</strong> 6:00 PM<br>
+                        <strong>Venue:</strong> Dining Hall</p>
+                        <p style="margin-top: 1rem;">Monthly birthday celebration for all November birthday residents.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact for Updates -->
+            <div style="text-align: center;">
+                <div class="content-card" style="max-width: 600px; margin: 0 auto;">
+                    <h3>📧 Stay Connected</h3>
+                    <p>Want to receive regular updates about our activities and events? Contact our office to join our notification list.</p>
+                    <div style="margin-top: 2rem;">
+                        <p><strong>📞 Call:</strong> +91 98765 43210</p>
+                        <p><strong>✉️ Email:</strong> updates@sevaashram.org</p>
+                        <p><strong>📱 WhatsApp:</strong> +91 98765 43210</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Seva Ashram</h3>
+                    <p>Providing loving care and comfortable living for our elderly community with respect and dignity.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="notice.html">Notice Board</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 123 Gandhi Nagar, Delhi, India</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️ info@sevaashram.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seva Ashram. Made with ❤️ for our elders.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Notice Board Specific Styles -->
+    <style>
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            border: 2px solid var(--primary-green);
+            background-color: white;
+            color: var(--primary-green);
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background-color: var(--primary-green);
+            color: var(--cream);
+        }
+
+        .notices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .notice-item {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .notice-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .notice-header {
+            background-color: var(--cream);
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .notice-header h3 {
+            color: var(--primary-green);
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .notice-date {
+            color: var(--brown);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .notice-content {
+            padding: 1.5rem;
+        }
+
+        .notice-content p {
+            color: var(--dark-green);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .notice-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .notice-tag {
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .events-tag {
+            background-color: var(--primary-green);
+            color: var(--cream);
+        }
+
+        .health-tag {
+            background-color: var(--brown);
+            color: var(--cream);
+        }
+
+        .general-tag {
+            background-color: var(--gold);
+            color: var(--dark-green);
+        }
+
+        .festivals-tag {
+            background-color: var(--dark-green);
+            color: var(--cream);
+        }
+
+        .notice-time {
+            color: var(--brown);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .notices-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-buttons {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .notice-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .notice-header h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</body>
+</html>

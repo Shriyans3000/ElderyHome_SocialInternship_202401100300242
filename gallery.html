@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Seva Ashram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🏠 Seva Ashram</h2>
+                    <p>सेवा आश्रम</p>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="journey.html" class="nav-link">Our Journey</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="notice.html" class="nav-link">Notice Board</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>गैलरी - Capturing Moments of Joy and Togetherness</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section style="padding: 2rem 0; background-color: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all')">All Photos</button>
+                    <button class="filter-btn" onclick="filterGallery('festivals')">Festivals</button>
+                    <button class="filter-btn" onclick="filterGallery('activities')">Activities</button>
+                    <button class="filter-btn" onclick="filterGallery('facilities')">Facilities</button>
+                    <button class="filter-btn" onclick="filterGallery('events')">Special Events</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Festival Photos -->
+                <div class="gallery-item festivals">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🎊</span>
+                            <p>Diwali Celebration</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Diwali Festival 2023</h3>
+                            <p>Grand celebration with traditional lighting, rangoli, and cultural programs</p>
+                            <span class="gallery-date">October 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item activities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🧘‍♀️</span>
+                            <p>Morning Yoga</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Daily Yoga Sessions</h3>
+                            <p>Residents enjoying their morning yoga and meditation sessions</p>
+                            <span class="gallery-date">Daily Activity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item facilities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🏠</span>
+                            <p>Dining Hall</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Spacious Dining Hall</h3>
+                            <p>Our comfortable dining area where residents enjoy meals together</p>
+                            <span class="gallery-date">Facility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item festivals">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🎭</span>
+                            <p>Holi Celebration</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Holi Festival of Colors</h3>
+                            <p>Joyful Holi celebration with colors, music, and traditional sweets</p>
+                            <span class="gallery-date">March 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item activities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🎵</span>
+                            <p>Music Therapy</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Music Therapy Session</h3>
+                            <p>Residents participating in healing music and singing sessions</p>
+                            <span class="gallery-date">Weekly Activity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item facilities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🛏️</span>
+                            <p>Resident Room</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Comfortable Living Rooms</h3>
+                            <p>Well-furnished rooms with modern amenities for resident comfort</p>
+                            <span class="gallery-date">Facility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item events">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🎂</span>
+                            <p>Birthday Party</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Birthday Celebrations</h3>
+                            <p>Monthly birthday celebrations bringing joy to all residents</p>
+                            <span class="gallery-date">Monthly Event</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item activities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🌱</span>
+                            <p>Garden Activity</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Gardening Therapy</h3>
+                            <p>Residents enjoying gardening activities in our beautiful garden</p>
+                            <span class="gallery-date">Seasonal Activity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item festivals">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🙏</span>
+                            <p>Navratri Aarti</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Navratri Celebrations</h3>
+                            <p>Nine days of devotional prayers and cultural programs</p>
+                            <span class="gallery-date">September 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item facilities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🏥</span>
+                            <p>Medical Room</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Medical Care Facility</h3>
+                            <p>Well-equipped medical room with 24/7 healthcare services</p>
+                            <span class="gallery-date">Facility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item events">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>👨‍⚕️</span>
+                            <p>Health Checkup</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Monthly Health Camp</h3>
+                            <p>Regular health checkups by visiting doctors and specialists</p>
+                            <span class="gallery-date">Monthly Event</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item activities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>📚</span>
+                            <p>Story Time</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Storytelling Sessions</h3>
+                            <p>Residents sharing their life stories and experiences</p>
+                            <span class="gallery-date">Weekly Activity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item festivals">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🎪</span>
+                            <p>Dussehra Event</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Dussehra Celebration</h3>
+                            <p>Traditional Dussehra celebration with cultural programs</p>
+                            <span class="gallery-date">October 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item facilities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🌳</span>
+                            <p>Garden Area</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Beautiful Garden</h3>
+                            <p>Peaceful garden area for morning walks and relaxation</p>
+                            <span class="gallery-date">Facility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item events">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>👨‍👩‍👧‍👦</span>
+                            <p>Family Visit</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Family Visiting Day</h3>
+                            <p>Special family gathering days with cultural programs</p>
+                            <span class="gallery-date">Monthly Event</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item activities">
+                    <div class="gallery-card">
+                        <div class="image-placeholder">
+                            <span>🎨</span>
+                            <p>Arts & Crafts</p>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Creative Arts Session</h3>
+                            <p>Residents engaged in painting and handicraft activities</p>
+                            <span class="gallery-date">Weekly Activity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div style="margin-top: 4rem;">
+                <h2 class="section-title">📹 Virtual Tour</h2>
+                <div class="content-card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <div style="background: linear-gradient(135deg, var(--primary-green), var(--dark-green)); padding: 4rem 2rem; border-radius: 20px; color: var(--cream);">
+                        <div style="font-size: 4rem; margin-bottom: 2rem;">🎥</div>
+                        <h3 style="color: var(--cream); font-size: 1.8rem; margin-bottom: 1rem;">Take a Virtual Tour</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                            Experience our facilities, meet our residents, and see the warmth of our community through our virtual tour video.
+                        </p>
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "A picture is worth a thousand words, but a visit is worth a thousand pictures."
+                        </p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn" style="background-color: var(--gold); color: var(--dark-green); border-color: var(--gold);">Schedule a Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials with Photos -->
+            <div style="margin-top: 4rem;">
+                <h2 class="section-title">💝 Moments of Joy</h2>
+                <div class="content-grid">
+                    <div class="content-card" style="text-align: center;">
+                        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--gold), var(--brown)); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--cream);">
+                            👵
+                        </div>
+                        <h3>Mrs. Sunita Sharma</h3>
+                        <p style="font-style: italic; color: var(--brown);">"Every day here feels like a celebration. The care and love I receive makes me feel blessed."</p>
+                        <span style="color: var(--primary-green); font-weight: 600;">Resident since 2020</span>
+                    </div>
+
+                    <div class="content-card" style="text-align: center;">
+                        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-green), var(--dark-green)); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--cream);">
+                            👴
+                        </div>
+                        <h3>Mr. Rajesh Kumar</h3>
+                        <p style="font-style: italic; color: var(--brown);">"The festivals and activities here keep me young at heart. It truly feels like home."</p>
+                        <span style="color: var(--primary-green); font-weight: 600;">Resident since 2019</span>
+                    </div>
+
+                    <div class="content-card" style="text-align: center;">
+                        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--brown), var(--gold)); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--cream);">
+                            👨‍👩‍👧
+                        </div>
+                        <h3>The Gupta Family</h3>
+                        <p style="font-style: italic; color: var(--brown);">"We are so grateful for the love and care our mother receives here. Thank you, Seva Ashram!"</p>
+                        <span style="color: var(--primary-green); font-weight: 600;">Family Member</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Seva Ashram</h3>
+                    <p>Providing loving care and comfortable living for our elderly community with respect and dignity.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="notice.html">Notice Board</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 123 Gandhi Nagar, Delhi, India</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️ info@sevaashram.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seva Ashram. Made with ❤️ for our elders.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Gallery Specific Styles -->
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-card .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--gold), var(--brown));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--cream);
+            font-size: 3rem;
+        }
+
+        .gallery-card .image-placeholder p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .gallery-info {
+            padding: 1.5rem;
+        }
+
+        .gallery-info h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .gallery-info p {
+            color: var(--dark-green);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-date {
+            color: var(--brown);
+            font-size: 0.9rem;
+            font-weight: 500;
+            background-color: var(--cream);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            border: 2px solid var(--primary-green);
+            background-color: white;
+            color: var(--primary-green);
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background-color: var(--primary-green);
+            color: var(--cream);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .gallery-card .image-placeholder {
+                height: 180px;
+                font-size: 2.5rem;
+            }
+
+            .filter-buttons {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <!-- Gallery Filter Script -->
+    <script>
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Show/hide gallery items
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeIn 0.5s ease';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

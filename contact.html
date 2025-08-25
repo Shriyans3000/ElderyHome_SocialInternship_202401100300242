@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Seva Ashram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🏠 Seva Ashram</h2>
+                    <p>सेवा आश्रम</p>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="journey.html" class="nav-link">Our Journey</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="notice.html" class="nav-link">Notice Board</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>संपर्क करें - We're Here to Help and Answer Your Questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="color: var(--primary-green); margin-bottom: 2rem; font-size: 2rem;">Get in Touch</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a topic</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="visit">Schedule a Visit</option>
+                                <option value="services">Services Information</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="volunteer">Volunteer Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please share your questions or requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy" style="display: inline; margin-left: 0.5rem;">I agree to the privacy policy and terms of service</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                            Send Message 📧
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="color: var(--primary-green); margin-bottom: 2rem; font-size: 2rem;">Contact Information</h2>
+                    
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Visit Us</h3>
+                                <p>Seva Ashram Old Age Home<br>
+                                123 Gandhi Nagar<br>
+                                New Delhi - 110031<br>
+                                India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p><strong>Main Office:</strong> +91 98765 43210<br>
+                                <strong>Emergency:</strong> +91 98765 43211<br>
+                                <strong>Landline:</strong> 011-2567-8901</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p><strong>General:</strong> info@sevaashram.org<br>
+                                <strong>Admissions:</strong> admissions@sevaashram.org<br>
+                                <strong>Emergency:</strong> emergency@sevaashram.org</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <h3>Office Hours</h3>
+                                <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                                <strong>Saturday:</strong> 9:00 AM - 4:00 PM<br>
+                                <strong>Sunday:</strong> 10:00 AM - 2:00 PM<br>
+                                <strong>Emergency:</strong> 24/7 Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div style="margin-top: 4rem;">
+                <h2 class="section-title">📍 Find Us</h2>
+                <div class="content-card" style="padding: 0; overflow: hidden;">
+                    <div style="background: linear-gradient(135deg, var(--primary-green), var(--dark-green)); padding: 4rem 2rem; text-align: center; color: var(--cream);">
+                        <div style="font-size: 4rem; margin-bottom: 2rem;">🗺️</div>
+                        <h3 style="color: var(--cream); font-size: 1.8rem; margin-bottom: 1rem;">Interactive Map</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                            Located in the heart of Gandhi Nagar, Delhi, our facility is easily accessible by public transport and private vehicles.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>🚇 Metro:</strong> Gandhi Nagar Metro Station (2 km)
+                            </div>
+                            <div>
+                                <strong>🚌 Bus Stop:</strong> Gandhi Nagar Main (500m)
+                            </div>
+                            <div>
+                                <strong>🅿️ Parking:</strong> Available on premises
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div style="margin-top: 4rem;">
+                <h2 class="section-title">❓ Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3>How can I schedule a visit to Seva Ashram?</h3>
+                        <p>You can schedule a visit by calling us at +91 98765 43210 or filling out the contact form above. We welcome families to visit and see our facilities firsthand.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What is the admission process?</h3>
+                        <p>Our admission process involves an initial consultation, health assessment, facility tour, and discussion of care requirements. We ensure the best fit for both the resident and our community.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Do you provide medical care 24/7?</h3>
+                        <p>Yes, we have qualified medical staff available 24/7, including trained nurses and on-call doctors for emergencies and regular health monitoring.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can families visit regularly?</h3>
+                        <p>Absolutely! We encourage family visits. Our visiting hours are flexible, and we have comfortable spaces for families to spend quality time with their loved ones.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What activities are available for residents?</h3>
+                        <p>We offer yoga, meditation, cultural programs, festivals, music therapy, gardening, arts & crafts, and social activities to keep our residents engaged and happy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div style="background: linear-gradient(135deg, var(--brown), var(--gold)); padding: 3rem 2rem; border-radius: 20px; color: var(--cream); margin-top: 4rem; text-align: center;">
+                <h2 style="color: var(--cream); margin-bottom: 2rem;">🚨 Emergency Contact</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">For any medical emergency or urgent assistance:</p>
+                <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                    <div>
+                        <h3 style="color: var(--cream); margin-bottom: 0.5rem;">📞 Emergency Hotline</h3>
+                        <p style="font-size: 1.5rem; font-weight: 700;">+91 98765 43211</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--cream); margin-bottom: 0.5rem;">🚑 Medical Emergency</h3>
+                        <p style="font-size: 1.5rem; font-weight: 700;">Available 24/7</p>
+                    </div>
+                </div>
+                <p style="margin-top: 2rem; font-style: italic; opacity: 0.9;">
+                    Our dedicated emergency response team is always ready to assist in any situation.
+                </p>
+            </div>
+
+            <!-- Social Media -->
+            <div style="text-align: center; margin-top: 4rem;">
+                <h2 class="section-title">🌐 Connect With Us</h2>
+                <div class="content-card" style="max-width: 600px; margin: 0 auto;">
+                    <p style="margin-bottom: 2rem;">Stay updated with our latest news, events, and activities through our social media channels.</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📘</div>
+                            <p><strong>Facebook</strong><br>@SevaAshramDelhi</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+                            <p><strong>WhatsApp</strong><br>+91 98765 43210</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📧</div>
+                            <p><strong>Newsletter</strong><br>Monthly Updates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Seva Ashram</h3>
+                    <p>Providing loving care and comfortable living for our elderly community with respect and dignity.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="notice.html">Notice Board</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 123 Gandhi Nagar, Delhi, India</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️ info@sevaashram.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seva Ashram. Made with ❤️ for our elders.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Contact Page Specific Styles -->
+    <style>
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-green);
+        }
+
+        .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+
+        .contact-info-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .contact-item h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-item p {
+            color: var(--dark-green);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .faq-container {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .faq-item {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--gold);
+        }
+
+        .faq-item h3 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            color: var(--dark-green);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container > div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                gap: 3rem !important;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            .emergency-contact > div {
+                flex-direction: column !important;
+                gap: 2rem !important;
+            }
+        }
+    </style>
+</body>
+</html>
